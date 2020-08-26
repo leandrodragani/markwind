@@ -50,7 +50,7 @@ export default function Home() {
   const handleDownload = () => {
     const markdownHtml = renderToStaticMarkup(
       <Markdown
-        className="container mx-auto p-10 prose"
+        className="container mx-auto p-10 prose prose-sm sm:prose lg:prose-lg xl:prose-2xl font-sans"
         source={value}
         renderers={{ code: CodeBlock }}
       />
@@ -103,7 +103,6 @@ export default function Home() {
                     className="prose"
                     source={value}
                     renderers={{ code: CodeBlock }}
-                    s
                   />
                 </div>
               </ScrollSyncPane>
